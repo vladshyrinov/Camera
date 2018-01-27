@@ -1,0 +1,14 @@
+{
+  "name": "camera_connection",
+  "version": "1.0.0",
+  "description": "App to connect to camera and do a snapshot",
+  "main": "index.js",
+  "author": "Vlad Shyrinov <vlad.shyrinov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
