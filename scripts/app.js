@@ -14,5 +14,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 640, 480);
+    context.drawImage(video, 0, 0, 640, 480);
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    window.location.href = image;
 });
